@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Email form</title>
+</head>
+<body>
+<h2>Enter your email address:</h2>
+<form action="/sendEmail" method="post">
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <button type="submit" name="useSmtp" value="true">Send via SMTP</button>
+    <button type="submit" name="useSmtp" value="false">Send via API</button>
+</form>
+</body>
+</html>
